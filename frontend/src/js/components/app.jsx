@@ -3,7 +3,7 @@ import {
   BrowserRouter as Router,
   Route
 } from 'react-router-dom';
-import Header from './views/header';
+import NavBar from './views/nav-bar';
 import CoolView from './views/cool-view';
 
 class App extends React.Component {
@@ -11,8 +11,8 @@ class App extends React.Component {
   render() {
     return (
       <Router>
-        <div>
-          <Header />
+        <div className="">
+          <NavBar />
 
           <Route path="/cool" component={CoolView}/>
           <Route path="/foo" component={CoolView}/>

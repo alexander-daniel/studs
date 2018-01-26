@@ -2,24 +2,24 @@ import React from 'react';
 import { Link, withRouter } from 'react-router-dom';
 import classnames from 'classnames';
 
-class Header extends React.Component {
+class NavBar extends React.Component {
   render() {
     const { pathname } = this.props.location;
 
     return (
-      <div className="container header">
+      <div className="header">
         <Link className={classnames('button')} to="/cool">
-          {'Cool'}
+          {'Cool View'}
         </Link>
         <Link className={classnames('button')} to="/foo">
-          {'Foo'}
+          {'Foo View'}
         </Link>
         <Link className={classnames('button')} to="/biz">
-          {'Biz'}
+          {'Biz View'}
         </Link>
       </div>
     );
   }
 }
 
-export default withRouter(Header);
+export default withRouter(NavBar);

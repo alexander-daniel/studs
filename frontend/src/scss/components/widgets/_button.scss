@@ -1,3 +1,19 @@
+$button-color: #6772E5;
+
 .button {
+  display: inline-block;
+  border: 1px solid transparent;
+  color: white;
   border-radius: $border-radius;
+  background-color: #6772E5;
+  padding: 0.5rem;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+  text-decoration: none;
+
+  &:hover {
+    // color: #7795f8;
+    transform: translateY(-1px);
+    box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);
+  }
 }

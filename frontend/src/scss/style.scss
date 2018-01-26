@@ -1,4 +1,8 @@
 @import "_normalize.scss";
 @import "_variables.scss";
-@import "components/views/_header.scss";
+@import "_skeleton.scss";
+
+@import "_layout.scss";
+
+@import "components/views/_nav-bar.scss";
 @import "components/widgets/_button.scss";
